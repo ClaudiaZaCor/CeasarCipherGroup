@@ -2,11 +2,11 @@
 ___
 Crea una web que pida, por medio de un prompt(), una frase al usuario y devuelva el mismo mensaje encriptado según el algoritmo de Cifrado César con el parámetro de desplazamiento de 33 espacios hacia la derecha
 ~~~
-Por ejemplo:
+    Por ejemplo:
 
-Texto original: `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+    Texto original: `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-Texto codificado: `HIJKLMNOPQRSTUVWXYZABCDEFG`
+    Texto codificado: `HIJKLMNOPQRSTUVWXYZABCDEFG`
 ~~~
 + Creamos una variable `option` que pide por medio de un prompt que elija dos opciones:
     1.Cifrar 2. Decifrar
@@ -22,11 +22,11 @@ Texto codificado: `HIJKLMNOPQRSTUVWXYZABCDEFG`
 + En una nueva variable obtenemos el código ASCII de cada letra mediante el método `charCodeAt`.
 + Evaluamos los números en código ASCII mediante un `if`. Primero evaluamos las mayúsculas que según el código ASCII se encuentran en el rango de 65 a 90:
 ~~~
-if (asc>=65 && asc<=90)
+        if (asc>=65 && asc<=90)
 ~~~
 + Luego aplicamos la fórmula para obtener la nueva posición en código ASCII.
 ~~~
-var newAsc = (asc-65 +33)%26 + 65
+        var newAsc = (asc-65 +33)%26 + 65
 ~~~
 + Desciframos el nuevo código a letras mediante el método `String.fromCharCode`.
 + Almacenamos letra por letra en el nuevo string.
