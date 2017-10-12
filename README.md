@@ -22,11 +22,11 @@ Texto codificado: `HIJKLMNOPQRSTUVWXYZABCDEFG`
 + En una nueva variable obtenemos el código ASCII de cada letra mediante el método `charCodeAt`.
 + Evaluamos los números en código ASCII mediante un `if`. Primero evaluamos las mayúsculas que según el código ASCII se encuentran en el rango de 65 a 90:
 ~~~
-if (asc>=65 && asc<=90)
+>>>if (asc>=65 && asc<=90)
 ~~~
 + Luego aplicamos la fórmula para obtener la nueva posición en código ASCII.
 ~~~
-var newAsc = (asc-65 +33)%26 + 65
+>>>var newAsc = (asc-65 +33)%26 + 65
 ~~~
 + Desciframos el nuevo código a letras mediante el método `String.fromCharCode`.
 + Almacenamos letra por letra en el nuevo string.
